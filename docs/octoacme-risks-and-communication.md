@@ -39,4 +39,21 @@ Incident Communication
 
 ## Escalation Paths
 - Team-level -> PM -> Product Lead -> Sponsor
-- For security incidents, follow the security incident runbook and notify Security on-call
+- For security incidents, follow the security incident runbook and notify Security Lead
+- For infrastructure/deployment issues, engage DevOps Engineer
+- For release decisions, coordinate with Release Manager
+- See [Security Review Checklist](./security-review-checklist.md) for security escalation details
+
+## Role-Specific Communication Responsibilities
+- **Project Manager**: Weekly status updates, risk communication, stakeholder coordination
+- **Product Manager**: Roadmap updates, feature specifications, success metrics reporting
+- **Release Manager**: Release schedules, deployment status, post-release summaries
+- **Security Lead**: Security incidents, vulnerability reports, security training
+- **DevOps Engineer**: Infrastructure status, deployment issues, performance alerts
+- **Developers**: PR descriptions, technical design docs, implementation updates
+- **QA/Testing**: Test results, bug reports, quality sign-offs
+- **UX Designer**: Design reviews, user research findings, usability reports
+
+## Related Documents
+- [OctoAcme Roles and Personas](./octoacme-roles-and-personas.md) - Communication patterns by role
+- [Security Review Checklist](./security-review-checklist.md) - Security incident communication
