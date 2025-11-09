@@ -17,11 +17,13 @@ Guidance for managing day-to-day execution and tracking progress toward project 
   - Require at least one approval before merging (or team-defined policy)
 
 ## Quality & Testing
-- Unit tests for new logic
-- Integration tests where applicable
-- End-to-end smoke tests for critical flows before release
-- Security scanning in CI
-- Manual QA for feature acceptance when needed
+- Unit tests for new logic (Developers)
+- Integration tests where applicable (Developers, QA)
+- End-to-end smoke tests for critical flows before release (QA)
+- Security scanning in CI (DevOps Engineer, monitored by Security Lead)
+- Manual QA for feature acceptance when needed (QA)
+- UX validation for user-facing changes (UX Designer, QA)
+- See [Security Review Checklist](./security-review-checklist.md) for security validation steps
 
 ## Reporting & Metrics
 - Track velocity and burndown
@@ -32,9 +34,19 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 - Level 1: Team-level triage in daily standup
 - Level 2: PM escalates to Product Lead and dependent teams
 - Level 3: Sponsor-level escalation for business-impacting issues
+- Security issues: Follow Security Lead escalation process (see [Security Review Checklist](./security-review-checklist.md))
+- Infrastructure/deployment issues: Engage DevOps Engineer
+- Release blockers: Coordinate with Release Manager
 
 ## Execution Checklist
 - [ ] Branching and PR conventions documented in repo
-- [ ] CI configured for tests and lint
-- [ ] Regular demos scheduled
-- [ ] Risk register updated weekly
+- [ ] CI configured for tests and lint (DevOps Engineer)
+- [ ] Regular demos scheduled (Project Manager)
+- [ ] Risk register updated weekly (Project Manager)
+- [ ] Security scanning enabled in CI (DevOps Engineer, Security Lead)
+- [ ] Release coordination plan established (Release Manager)
+
+## Related Documents
+- [OctoAcme Roles and Personas](./octoacme-roles-and-personas.md) - Role responsibilities
+- [Security Review Checklist](./security-review-checklist.md) - Security validation
+- [Release Readiness Checklist](./release-readiness-checklist.md) - Release preparation
